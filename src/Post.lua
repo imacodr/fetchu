@@ -1,12 +1,10 @@
 local HttpService = game:GetService("HttpService")
 
 type FetchOptions = {
-    method: string?, 
     content_type: Enum.HttpContentType?, 
-    headers: {}?, 
-    body: {}?, 
+    headers: Dictionary<any>?, 
+    body: Dictionary<any>?, 
     compress: boolean?, 
-    nocache: boolean?
 }
 
 return function (url: string, options: FetchOptions)
