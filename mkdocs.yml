@@ -1,0 +1,7 @@
+site_name: fetchu
+
+theme:
+  name: material
+  palette:
+    scheme: slate
+    primary: red

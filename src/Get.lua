@@ -1,20 +1,18 @@
 local HttpService = game:GetService("HttpService")
 
-type FetchOptions = {
-    headers: any?, 
+export type FetchOptions = {
+    headers: Dictionary<any>?, 
     nocache: boolean?
 }
 
 return function (url: string, options: FetchOptions)
+    local success,result = pcall(function()
+        return HttpService:GetAsync(url, (options and options.nocache) or false, (options and options.headers) or nil)		
+    end)
 
-local success,result = pcall(function()
-    return HttpService:GetAsync(url, options.nocache or false, options.headers or {})			
-end)
+    if not success then
+        return error(result)
+    end
 
-if success then
     return result
-else
-    return error(result)
-end
-
 end

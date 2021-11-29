@@ -1,8 +1,6 @@
 {
-  "name": "fetchu",
-  "version": "0.0.1",
-  "description": "",
-  "dependencies": {
-    "promise": "1.0.0"
-  }
+	"name": "fetchu",
+	"version": "0.0.1",
+	"description": "",
+	"dependencies": {}
 }
