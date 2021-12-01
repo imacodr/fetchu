@@ -13,21 +13,21 @@
         <meta name="author" content="imacodr">
       
       
-        <link rel="canonical" href="https://imacodr.github.io/fetchu/">
+        <link rel="canonical" href="https://imacodr.github.io/fetchu/api/">
       
       <link rel="icon" href="https://raw.githubusercontent.com/imacodr/fetchu/main/assets/logo.png">
       <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.4">
     
     
       
-        <title>fetchu</title>
+        <title>API - fetchu</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.db9e7362.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.db9e7362.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.3f5d1f46.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.3f5d1f46.min.css">
         
           
           
@@ -63,7 +63,7 @@
     <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="red" data-md-color-accent="">
   
     
-    <script>function __prefix(e){return new URL(".",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    <script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -71,7 +71,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#welcome-to-fetchu" class="md-skip">
+        <a href="#api" class="md-skip">
           Skip to content
         </a>
       
@@ -84,7 +84,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="fetchu" class="md-header__button md-logo" aria-label="fetchu" data-md-component="logo">
+    <a href=".." title="fetchu" class="md-header__button md-logo" aria-label="fetchu" data-md-component="logo">
       
   <img src="https://raw.githubusercontent.com/imacodr/fetchu/main/assets/logo.png" alt="logo">
 
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Introduction
+              API
             
           </span>
         </div>
@@ -183,7 +183,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="fetchu" class="md-nav__button md-logo" aria-label="fetchu" data-md-component="logo">
+    <a href=".." title="fetchu" class="md-nav__button md-logo" aria-label="fetchu" data-md-component="logo">
       
   <img src="https://raw.githubusercontent.com/imacodr/fetchu/main/assets/logo.png" alt="logo">
 
@@ -212,21 +212,11 @@
 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
         Introduction
       </a>
-      
     </li>
   
 
@@ -239,7 +229,7 @@
   
   
     <li class="md-nav__item">
-      <a href="installation/" class="md-nav__link">
+      <a href="../installation/" class="md-nav__link">
         Installation
       </a>
     </li>
@@ -252,11 +242,21 @@
 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="api/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         API
       </a>
+      
     </li>
   
 
@@ -269,7 +269,7 @@
   
   
     <li class="md-nav__item">
-      <a href="help/" class="md-nav__link">
+      <a href="../help/" class="md-nav__link">
         Help!
       </a>
     </li>
@@ -305,30 +305,57 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/imacodr/fetchu/edit/master/docs/index.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/imacodr/fetchu/edit/master/docs/api.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                <h1 id="welcome-to-fetchu">Welcome to fetchu</h1>
-<p><strong>fetchu</strong> is a lightweight module created to simplify Roblox's HttpService for faster and efficient requests. Our goal is to minimize all the work you do for one request in a single line of code.</p>
-<p>Here is an example of a request with <strong>fetchu</strong></p>
-<pre><code class="language-lua">local import = require(game.ReplicatedStorage.roarn_modules.roarn_tools)
+                <h1 id="api">API</h1>
+<p>All events for fetchu, and their properties are listed here.</p>
+<h1 id="events">Events</h1>
+<hr />
 
-local fetchu = import(&quot;fetchu&quot;) -- or local fetchu = require(path/to/fetchu)
-
-local response = fetchu.get(&quot;https://pokeapi.co/api/v2/pokemon?limit=1&quot;, {headers = {
-    [&quot;Authorization&quot;] = &quot;my token for authorization!&quot;
-}, nocache = true})
-
-print(response)
-
---[[
-    Returns:
-    {&quot;count&quot;:1118,&quot;next&quot;:&quot;https://pokeapi.co/api/v2/pokemon?offset=1&amp;limit=1&quot;,&quot;previous&quot;:null,&quot;name&quot;:&quot;bulbasaur&quot;,&quot;url&quot;:&quot;https://pokeapi.co/api/v2/pokemon/1/&quot;}
---]]
-
+<p><strong>get</strong></p>
+<pre><code class="language-lua">fetchu.get(requestUrl: string, {headers: Dictionary&lt;any&gt;?, nocache: boolean?})
 </code></pre>
+<p>Send an HTTP GET request</p>
+<hr />
+
+<p><strong>post</strong></p>
+<pre><code class="language-lua">fetchu.post(requestUrl: string, {content_type: Enum.HttpContentType?, headers: Dictionary&lt;any&gt;?, body: Dictionary&lt;any&gt;, compress: boolean?,})
+</code></pre>
+<p>Send an HTTP POST request</p>
+<hr />
+
+<p><strong>json</strong></p>
+<pre><code class="language-lua">fetchu.json(input: table)
+</code></pre>
+<p>Transforms Luau table input into a JSON string.</p>
+<hr />
+
+<p><strong>tablefy</strong></p>
+<pre><code class="language-lua">fetchu.tablefy(input: JSON)
+</code></pre>
+<p>Transforms JSON string into a Luau table.</p>
+<hr />
+
+<p><strong>put</strong></p>
+<pre><code class="language-lua">fetchu.put(requestUrl: string, {headers: Dictionary&lt;any&gt;?,body: Dictionary&lt;any&gt;?,})
+</code></pre>
+<p>Send an HTTP PUT request</p>
+<hr />
+
+<p><strong>delete</strong></p>
+<pre><code class="language-lua">fetchu.delete(requestUrl: string, {headers: Dictionary&lt;any&gt;?,body: Dictionary&lt;any&gt;?,})
+</code></pre>
+<p>Send an HTTP DELETE request</p>
+<hr />
+
+<p><strong>customRequest</strong></p>
+<pre><code class="language-lua">fetchu.customRequest(requestUrl: string, {method: string, headers: Dictionary&lt;any&gt;?,body: Dictionary&lt;any&gt;?,})
+</code></pre>
+<p>Sends an HTTP request using a custom method such as CONNECT, PATCH, etc listed on the <strong>FetchOptions</strong> paramater.</p>
+<hr />
                 
               
               
@@ -347,15 +374,30 @@ print(response)
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
+        
+        <a href="../installation/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Installation" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Installation
+            </div>
+          </div>
+        </a>
+      
       
         
-        <a href="installation/" class="md-footer__link md-footer__link--next" aria-label="Next: Installation" rel="next">
+        <a href="../help/" class="md-footer__link md-footer__link--next" aria-label="Next: Help!" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Installation
+              Help!
             </div>
           </div>
           <div class="md-footer__button md-icon">
@@ -386,10 +428,10 @@ print(response)
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": ".", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "assets/javascripts/workers/search.8397ff9e.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.8397ff9e.min.js", "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.1e84347e.min.js"></script>
+      <script src="../assets/javascripts/bundle.1e84347e.min.js"></script>
       
     
   </body>
