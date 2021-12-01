@@ -7,6 +7,8 @@ repo_name: imacodr/fetchu
 repo_url: https://github.com/imacodr/fetchu
 
 theme:
+  logo: https://github.com/imacodr/fetchu/blob/main/assets/logo.png?raw=true
+  favicon: /logo.png
   name: material
   palette:
     scheme: slate
