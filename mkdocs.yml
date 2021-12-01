@@ -8,7 +8,7 @@ repo_url: https://github.com/imacodr/fetchu
 
 theme:
   logo: https://github.com/imacodr/fetchu/blob/main/assets/logo.png?raw=true
-  favicon: /logo.png
+  favicon: https://github.com/imacodr/fetchu/blob/main/assets/logo.png?raw=true
   name: material
   palette:
     scheme: slate
