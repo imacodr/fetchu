@@ -1,4 +1,10 @@
 site_name: fetchu
+site_description: Documentation for fetchu
+site_author: imacodr
+site_url: https://imacodr.github.io/fetchu
+
+repo_name: imacodr/fetchu
+repo_url: https://github.com/imacodr/fetchu
 
 theme:
   name: material
