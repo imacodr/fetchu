@@ -2,22 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://imacodr.github.io/fetchu/</loc>
-         <lastmod>2021-12-01</lastmod>
+         <lastmod>2021-12-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://imacodr.github.io/fetchu/api/</loc>
-         <lastmod>2021-12-01</lastmod>
+         <lastmod>2021-12-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://imacodr.github.io/fetchu/help/</loc>
-         <lastmod>2021-12-01</lastmod>
+         <lastmod>2021-12-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://imacodr.github.io/fetchu/installation/</loc>
-         <lastmod>2021-12-01</lastmod>
+         <lastmod>2021-12-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
