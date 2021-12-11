@@ -5,6 +5,7 @@ export type FetchOptions = {
     headers: Dictionary<any>?,
     body: Dictionary<any>,
     compress: boolean?,
+    tablefy: boolean?
 }
 
 return function (url: string, options: FetchOptions)
@@ -15,6 +16,10 @@ return function (url: string, options: FetchOptions)
 
     if not success then
         return error(result)
+    end
+
+    if (options and options.tablefy) then
+        return HttpService:JSONDecode(result)
     end
 
     return result

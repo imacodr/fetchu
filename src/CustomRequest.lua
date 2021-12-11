@@ -3,6 +3,7 @@ local HttpService = game:GetService("HttpService")
 export type FetchOptions = {
     headers: Dictionary<any>?,
     body: Dictionary<any>?,
+    tablefy: boolean?
 }
 
 return function (url: string, options: FetchOptions & {method: string?})
@@ -18,6 +19,10 @@ return function (url: string, options: FetchOptions & {method: string?})
 
     if not success then
         return error(result)
+    end
+
+    if (options and options.tablefy) then
+        return HttpService:JSONDecode(result)
     end
 
     return result
