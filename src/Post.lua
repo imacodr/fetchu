@@ -11,7 +11,7 @@ export type FetchOptions = {
 return function (url: string, options: FetchOptions)
     local success,result = pcall(function()
         local body = HttpService:JSONEncode(options.body)
-        return HttpService:PostAsync(url, body, options.content_type or Enum.HttpContentType.ApplicationJson, options.compress or false, options.headers or {})			
+        return HttpService:PostAsync(url, body, options.content_type or Enum.HttpContentType.ApplicationJson, options.compress or false, options.headers)		
     end)
 
     if not success then
