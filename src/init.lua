@@ -56,5 +56,9 @@ fetchu.tablefy = function(json: string)
     HttpService:JSONDecode(json)
 end
 
+fetchu.generateGUID = function(curlyBraces: boolean?)
+    return HttpService:GenerateGUID(curlyBraces)
+end
+
 
 return fetchu

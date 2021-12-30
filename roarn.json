@@ -1,6 +1,6 @@
 {
 	"name": "fetchu",
-	"version": "0.0.3",
+	"version": "0.0.9",
 	"description": "Simplifying requests out of Roblox making HttpService easier.",
 	"dependencies": {}
 }

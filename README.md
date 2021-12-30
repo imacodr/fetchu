@@ -1,4 +1,4 @@
-[![Frame 594|690x215](./assets/banner.png)](https://imacodr.github.io/fetchu)
+[![Frame 594|690x215](https://raw.githubusercontent.com/imacodr/fetchu/main/assets/banner.png)](https://imacodr.github.io/fetchu)
 
 <div align="center">
 
@@ -64,5 +64,3 @@ If you have more concerns or need help with fetchu we have community servers!
 [![1024-gold 2|40x40](./assets/discord.png)](https://discord.gg/SYtrv9m)
 
 </div>
-
-_Made with ❤️ by imacodr_
