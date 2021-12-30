@@ -2,8 +2,8 @@ local HttpService = game:GetService("HttpService")
 
 export type FetchOptions = {
     content_type: Enum.HttpContentType?,
-    headers: Dictionary<any>?,
-    body: Dictionary<any>,
+    headers: any?,
+    body: any,
     compress: boolean?,
     tablefy: boolean?
 }

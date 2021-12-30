@@ -1,8 +1,8 @@
 local HttpService = game:GetService("HttpService")
 
 export type FetchOptions = {
-    headers: Dictionary<any>?,
-    body: Dictionary<any>?,
+    headers: any?,
+    body: any?,
     tablefy: boolean?
 }
 
