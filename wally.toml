@@ -1,0 +1,6 @@
+[package]
+name = "imacodr/fetchu"
+description = "Simplifying requests out of Roblox making HttpService easier."
+version = "1.0.3"
+realm = "shared"
+registry = "https://github.com/upliftgames/wally-index"
