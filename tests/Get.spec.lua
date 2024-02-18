@@ -1,0 +1,22 @@
+return function()
+	local MockHttp = require(script.Parent.MockHttp)
+	describe("Get tests", function()
+		it("should get a simple url", function()
+			MockHttp(function()
+				return "result"
+			end)
+			local fetchu = require(game.ServerScriptService.fetchu)
+			local result = fetchu.get("http://example.com")
+			expect(result).to.equal("result")
+		end)
+
+		it("should fail to get", function()
+			MockHttp(function()
+				error("error")
+			end)
+			local fetchu = require(game.ServerScriptService.fetchu)
+			local result = fetchu.get("http://example.com")
+			expect(result).to.equal("result")
+		end)
+	end)
+end

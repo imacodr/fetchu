@@ -1,0 +1,12 @@
+{
+  "name": "@rbxts/fetchu",
+  "description": "Simplifying requests out of Roblox making HttpService easier.",
+  "version": "0.1.0",
+  "main": "./src/init.lua",
+  "typings": "./src/index.d.ts",
+  "files": [
+    "src"
+  ],
+  "author": "Sam P <imacodr>",
+  "homepage": "https://imacodr.github.io/fetchu"
+}

@@ -4,3 +4,6 @@ description = "Simplifying requests out of Roblox making HttpService easier."
 version = "1.0.4"
 realm = "shared"
 registry = "https://github.com/upliftgames/wally-index"
+
+[dev-dependencies]
+TestEZ = "roblox/testez@0.4.1"
